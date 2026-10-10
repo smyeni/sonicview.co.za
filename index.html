@@ -1,4 +1,22 @@
+<!DOCTYPE html>
+<html><head><title>SonicView</title>
+<script>
+const PASS="sawubona2026"; // <-- change this
+function gate(){
+  let p=prompt("SonicView — enter password:");
+  if(p!==PASS){document.body.innerHTML="<h2>Wrong — hamba</h2>"; return;}
+  document.getElementById('gate').style.display='none';
+  document.getElementById('real').style.display='block';
+}
+window.onload=gate;
+</script>
+<style>#real{display:none}</style>
+</head><body>
+<div id="gate">Checking...</div>
+<div id="real">
 <h1>SonicView.co.za — Sees 1m per frame, sneezes at 80m</h1>
 <p>At 100kph, taxi moves 1m/frame. We warn 80 frames early. Tyre saved. Money counted.</p>
 <p>Demo: N2 Durban night — cow at 120m, hump at 80m, pothole at 60m.</p>
 <p>Contact: hello@sonicview.co.za</p>
+</div>
+</body></html>
